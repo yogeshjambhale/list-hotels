@@ -1,0 +1,98 @@
+.header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.header h3{
+    margin: 0;
+}
+.header mat-icon{
+    cursor: pointer;
+}
+.add-img-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#file{
+    display: none;
+}
+
+.file{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+.property-details{
+    padding: 20px 100px ;
+}
+.col-md-6{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.col-md-6 .feilds{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+.feilds input{
+    border: none;
+    width: 100%;
+    outline: 0;
+    font-size: 17px;
+}
+h3{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+h4{
+    margin: 0;
+    font-family:sans-serif;
+    font-size: 17px;
+    color: black;
+}
+span{
+    font-size: 15px;
+    font-weight: 500;
+    color: orangered;
+    cursor: pointer;
+
+
+}
+.Address{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    
+}
+p{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+.button{
+    background-color: orangered;
+    color: white;
+    width: 200px;
+}
+@media screen and (max-width:560px) {
+    .property-details{
+        padding: 20px 20px ;
+    }
+}

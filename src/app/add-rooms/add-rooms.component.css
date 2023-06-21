@@ -1,0 +1,56 @@
+.header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.header h3{
+    margin: 0;
+    font-weight: 500;
+}
+.header mat-icon{
+    cursor: pointer;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.add-room{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid orangered
+}
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: rgb(238, 203, 187);
+    width: 130px;
+    padding-left: 10px;
+    border-radius: 3px;
+    color: black;
+}
+h2{
+    /* margin: 0; */
+    color: orangered;
+}
+.rooms{
+    width: 300px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    margin: 20px;
+}
+@media screen and(max-width:560px) {
+    
+}

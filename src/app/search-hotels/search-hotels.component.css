@@ -1,0 +1,48 @@
+:root {
+    --white: rgb(236, 231, 231);
+  }
+mat-chip {
+    max-width: 200px;
+}
+ span{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgb(236, 231, 231);
+
+}
+label input{
+    display: none;
+    
+}
+label span{
+    position: relative;
+    display: inline-block;
+}
+label input:checked ~ span{
+    border-radius: 20px;
+    background-color: gray;
+}
+.title{
+   font-size: 17px;
+   font-weight: 500;
+   font-family: inherit;
+   color: black; 
+}
+.description{
+    width: 100%;
+    
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    background-color: orangered;
+    color: white;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+

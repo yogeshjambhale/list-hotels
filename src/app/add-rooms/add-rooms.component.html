@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="header">
+        <mat-icon (click)="goBack()"> arrow_back_ios</mat-icon>
+        <h3>Rooms</h3>
+    </div>
+    <div class="row">
+        
+        <div class="add-room">
+            <a routerLink="/rooms" class="add-room">
+               <mat-icon>add</mat-icon>
+               <h3>Add New Room</h3>
+            </a>
+        </div>
+       
+    </div>
+    <div class="row">
+        <div class="rooms" *ngFor="let room of hotels ">
+            <h2>{{room.roomtypes}}</h2>
+            <a routerLink="/rooms/{{room.id}}" >Upadate rooms<mat-icon > chevron_right</mat-icon></a>
+        </div>
+        
+    </div>
+    
+</div>

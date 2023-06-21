@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="header">
+        <mat-icon (click)="goBack()"> arrow_back_ios</mat-icon>
+        <h3>{{title}} hotels</h3>
+    </div>
+    <form  (ngSubmit)="submitHotelForm($event)">
+        <div class="add-img-row">
+            <label for="file" class="file">Add photo</label>
+            <input type="file" id="file" name="image"  accept="image/jpeg, image/jpg, image/png">
+        </div>
+        <div class="property-details row">
+            <h3>Property details</h3>
+            <div class="col-md-6">
+                <div class="feilds">
+                    <input type="text" name="hotelname" placeholder="Enter hotel name"  value="{{name}}">
+                </div>
+                <div class="amenities feilds">
+                    <h4>Amenities</h4>
+                    <span (click)="openHotelAminities()">Add</span>
+                </div>
+                <textarea  name="aminities" value="{{aminities}}" hidden> </textarea>
+                <span ></span>
+            </div>
+            <div class="col-md-6">
+                <div class="stay-type feilds">
+                    <h4>Stay type</h4>
+                    <span (click)="openStayTypes()">Add</span>
+                </div>
+                <textarea  name="staytype" value="{{st}}" hidden> </textarea>
+                <div class="description feilds">
+                    <h4>Description</h4>
+                    <span (click)="opendescription()">Add</span>
+                   
+                </div>
+                <textarea  name="discription" value="{{dc}}" hidden> </textarea>
+            </div>
+            <h3>Address</h3>
+            <div class="col-md-6">
+                <div class="feilds">
+                    <mat-icon > location_on</mat-icon> <input type="textaria" name="address"  placeholder="Enter address" value="{{address}}">
+                </div>
+            </div>
+            <div class="btn">
+                <button mat-button class="button">Save</button>
+            </div>
+        </div>  
+    </form>
+    <!-- <form (ngSubmit)="onSubmit($event)">
+        <input name="player" value="{{hotelami}}">
+        <input type="submit" value="submit">
+     </form> -->
+</div>

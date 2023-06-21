@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="add">
+        <a routerLink="/hotel">Add Hotel</a>
+    </div>
+    <div class="row">
+        <div class="hotel" *ngFor="let hotel of hotels">
+            <img src="assets/img.jpg" alt="">
+            <div>
+                 <h1>{{hotel.hotel_name | titlecase}}</h1>
+                 <p>{{hotel.address}}</p>
+                 <a ><button (click)="setHotel(hotel.id)" routerLink="/hotel/{{hotel.id}}">Update Hotel</button></a>
+                 <a ><button (click)="setHotel(hotel.id)" routerLink="/add-rooms">View rooms</button></a>
+            </div>
+        </div>
+    </div>
+</div>

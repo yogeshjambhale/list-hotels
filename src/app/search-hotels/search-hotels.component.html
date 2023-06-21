@@ -1,0 +1,62 @@
+<form [formGroup]="form" (ngSubmit)="submitstaytypes()" *ngIf="message === 'roomStay'">
+  <label *ngFor="let data of staytypedetails; let i=index">
+    <input type="checkbox" name="{{data.name}}" value="{{data.name}}" [(ngModel)]="data.isselected" [ngModelOptions]="{standalone: true}" (change)="onChackboxChange($event)">
+    <span> {{data.name}}</span>
+  </label>
+  <small>{{message}}</small>
+  <div class="btn">
+    <input type="submit" value="save"  class="button">
+  </div>
+</form>
+
+<form  (ngSubmit)="submitroomtypes()" *ngIf="message === 'roomType'">
+  <label *ngFor="let data of roomtypedetails; let i=index">
+    <input type="checkbox" name="{{data.name}}"  value="{{data.name}}" [(ngModel)]="data.isselected" [ngModelOptions]="{standalone: true}" (change)="onChackboxChange($event)">
+    <span> {{data.name}}</span>
+  </label>
+  <small>{{message}}</small>
+  <div class="btn">
+    <input type="submit" value="save"  class="button">
+  </div>
+</form>
+
+<form [formGroup]="form" (ngSubmit)="submitroomaminities()" *ngIf="message === 'roomaminities'">
+  <label *ngFor="let data of roomamidetails; let i=index" >
+    <input type="checkbox" name="{{data.name}}" value="{{data.name}}" [(ngModel)]="data.isselected" [ngModelOptions]="{standalone: true}" (change)="onChackboxChange($event)">
+    <span> {{data.name}}</span>
+  </label>
+  <small>{{message}}</small>
+  <div class="btn">
+    <input type="submit" value="save"  class="button">
+  </div>
+</form>
+
+<form [formGroup]="form" (ngSubmit)="submitbedtypes()" *ngIf="message === 'bedtype'">
+  <label *ngFor="let data of bedtypesdetails; let i=index">
+    <input type="checkbox" name="{{data.name}}" value="{{data.name}}" [(ngModel)]="data.isselected" [ngModelOptions]="{standalone: true}" (change)="onChackboxChange($event)">
+    <span> {{data.name}}</span>
+  </label>
+  <small>{{message}}</small>
+  <div class="btn">
+    <input type="submit" value="save"  class="button">
+  </div>
+</form>
+
+<form [formGroup]="form" (ngSubmit)="submithotelaminities()" *ngIf="message === 'hotelaminities'">
+  <label *ngFor="let data of hotelAminitiesdetails; let i=index">
+    <input type="checkbox" name="{{data.name}}" value="{{data.name}}" [(ngModel)]="data.isselected" [ngModelOptions]="{standalone: true}" (change)="onChackboxChange($event)">
+    <span> {{data.name}}</span>
+  </label>
+  <small>{{message}}</small>
+  <div class="btn">
+    <input type="submit" value="save"  class="button">
+  </div>
+</form>
+
+<form [formGroup]="formGroup" (ngSubmit)="submitDescription()" *ngIf="message === 'description'">
+  <label class="title">Description</label><br>
+  <textarea  class="description" rows="4" formControlName="description" >{{description}}</textarea>
+  <div class="btn">
+    <input type="submit" value="save"  class="button">
+  </div>
+</form>
